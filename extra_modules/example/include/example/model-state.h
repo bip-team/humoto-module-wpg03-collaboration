@@ -18,8 +18,9 @@ namespace humoto
         {
             protected:
                 #define HUMOTO_CONFIG_SECTION_ID "ModelState"
+                #define HUMOTO_CONFIG_CONSTRUCTOR ModelState
                 #define HUMOTO_CONFIG_ENTRIES \
-                    HUMOTO_CONFIG_MEMBER_CLASS(com_state_, "com_state");
+                    HUMOTO_CONFIG_MEMBER_CLASS(com_state_, "com_state")
                 #include "humoto/config/define_accessors.h"
 
                 void setDefaults()
@@ -32,9 +33,6 @@ namespace humoto
 
 
             public:
-                HUMOTO_DEFINE_CONFIG_CONSTRUCTORS(ModelState)
-
-
                 /**
                  * @brief Default constructor
                  */

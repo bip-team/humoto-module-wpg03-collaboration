@@ -21,14 +21,12 @@ namespace humoto
         {
             protected:
                 #define HUMOTO_CONFIG_SECTION_ID "WalkParameters"
+                #define HUMOTO_CONFIG_CONSTRUCTOR WalkParameters
                 #define HUMOTO_CONFIG_ENTRIES
                 #include "humoto/config/define_accessors.h"
 
 
             public:
-                HUMOTO_DEFINE_CONFIG_CONSTRUCTORS(WalkParameters)
-
-
                 /**
                  * @brief Default constructor
                  */
