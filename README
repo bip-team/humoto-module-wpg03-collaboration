@@ -1,15 +1,15 @@
-This is a demo of compiling external modules for Humoto, i.e., modules which
-are not stored in the main repository of Humoto.
+This module contains implementation of a walking pattern generator, which
+accounts for an external force acting on the CoM. The module was developed
+by Joven Agravante during his reasearch on human-robot collaboration.
+
 
 Directory layout:
     humoto          -- a submodule which links the main repository of Humoto;
-    extra_modules   -- a folder with extra modules for Humoto containing a
-                       single mock example;
-    Makefile        -- compilation script for the example module.
+    extra_modules   -- a folder with extra modules for Humoto containing wpg03
+                       module;
+    Makefile        -- compilation script.
 
-The example module is compiled with 'make all' command. You can learn the
-necessary cmake parameters for Humoto compilation scripts by reading Makefile.
+The module is compiled with 'make all' command. You can learn the necessary
+cmake parameters for Humoto compilation scripts by reading Makefile.
 
-You can use this repository as a template for new Humoto modules -- for this
-purpose you have to replace the mock module 'extra_modules/example' with your
-code.
+You may find additional documentation in 'extra_modules/wpg03/doc'.
